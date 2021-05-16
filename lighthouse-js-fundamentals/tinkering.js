@@ -1,7 +1,10 @@
-function multiply(a,b){
-  return a*b;
+let sum = 3 + 2;
+
+const doubleSum = function(a, b) {
+  let sum = a + b;
+  return sum * 2;
 }
 
-const result = multiply(2,4);
+doubleSum(5, 4);
 
-console.log(result);
+console.log(sum);
