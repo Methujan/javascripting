@@ -1,0 +1,84 @@
+/*
+ * http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+ * https://css-tricks.com/international-box-sizing-awareness-day/
+ * Do not modify these two selectors, please
+ */
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/*
+ * Global layout stuff
+ */
+
+body {
+  color: #545149;
+  background-color: #f5f1e3ff;
+  font-size: 24px;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+/*
+ * Additional CSS can be defined below or in other CSS files, as per instructions
+ */
+section {
+  padding: 10px;
+  padding-top: 50px;
+}
+
+article.tweet:hover {
+  box-shadow: 5px 5px #888888;
+}
+
+article.tweet {
+  border: solid #000;
+  border-width: medium;
+  border-color: dimgray;
+  padding-left: 10px;
+  padding-right: 10px;
+  word-wrap: break-word
+}
+
+article.tweet header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.tweet-handle {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+article.tweet footer {
+  border-top: solid dimgray;
+  border-width: medium;
+  border-color: dimgray;
+  padding-top: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.icon-btn {
+  background-color: #f5f1e3ff;
+  border: none;
+}
+
+.icon-btn:hover {
+  color: #1b9aaaff;
+}
+
+@media only screen and (min-width: 1024px) {
+  .container {
+    float: right;
+    width: 50%;
+    margin-top: 120px;
+  }
+}

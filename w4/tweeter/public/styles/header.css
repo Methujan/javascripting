@@ -1,0 +1,44 @@
+header.avatar-name {
+  height: 420px;
+  width: 100%;
+  background-color: #050505ff;
+  background-image: url("https://www.transparenttextures.com/patterns/carbon-fibre-v2.png");
+  margin-top: 120px;
+}
+
+.avatar {
+  height: 60%;
+  padding-top: 20px;
+}
+
+.avatar,
+.name {
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  margin: 0 auto 0 auto;
+  width: 90%;
+  background-color: #f5f1e3ff;
+}
+
+@media only screen and (min-width: 1024px) {
+  header.avatar-name {
+    width: 50%;
+    float: left;
+    margin-top: 250px;
+    background-color: #1b9aaaff;
+    background-image: url("https://www.transparenttextures.com/patterns/fabric-of-squares.png");
+  }
+  .avatar-background {
+    border: solid #f5f1e3ff;
+    border-width: 20px;
+    border-right-width: 80px;
+    background-position: center;
+  }
+  .avatar {
+    height: 60%;
+    padding-top: 20px;
+  }
+}
